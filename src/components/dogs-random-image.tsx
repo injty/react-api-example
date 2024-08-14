@@ -14,6 +14,7 @@ export const DogsRandomImage: FC = () => {
       const data = await getDogsRandomImage(search);
       return data;
     },
+    refetchOnWindowFocus: false,
     enabled: selectedBreed,
   });
 

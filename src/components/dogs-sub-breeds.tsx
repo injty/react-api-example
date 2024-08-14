@@ -19,6 +19,7 @@ export const DogsSubBreeds: FC<DogsSubBreedsProps> = () => {
       setBreeds(data);
       return data;
     },
+    refetchOnWindowFocus: false,
     enabled: selectedBreed,
   });
 
